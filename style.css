@@ -4,13 +4,18 @@
 }
 
 .main{
-    width: 1500px;
+    width: 900px;
     background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(tamwaris.png);
     background-position: center;
     background-size: cover;
     height: 1500px;
+    
 }
-
+@media screen and (min-width: 768px) {
+    .main {
+        max-width: 400px;
+    }
+}
 .navbar{
     width: 1200px;
     height: 75px;
@@ -166,10 +171,15 @@ ul li a:hover{
     height: 400px;
     background: linear-gradient(to top, rgba(0,0,0,0.8)50%, rgba(0,0,0,0.8)50%);
     position: absolute;
-    top: -20px;
-    left: 870px;
+    top: 600px;
+    bottom: 870px;
     border-radius: 10px;
     padding: 25px;
+}
+@media screen and (min-width: 768px) {
+    .form {
+        max-width: 400px;
+    }
 }
 
 .form h2{
@@ -182,6 +192,11 @@ ul li a:hover{
     border-radius: 10px;
     margin: 2px;
     padding: 8px;
+}
+@media screen and (min-width: 768px) {
+    .form h2 {
+        max-width: 400px;
+    }
 }
 
 .form input{
@@ -487,3 +502,5 @@ section {
         margin: 5px; /* Adjust margin for smaller screens */
     }
 }
+
+
